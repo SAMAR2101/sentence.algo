@@ -1,0 +1,13 @@
+ALGORITHM Intervalle 
+VAR 
+a,b,X:INTEGER
+
+BEGIN
+IF (X>=a and X<=b) THEN
+write("X=true")
+ELSE
+write("X=false")
+END_IF
+
+
+END

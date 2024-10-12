@@ -1,0 +1,23 @@
+ALGORITHM sentence
+VAR
+    i,mbc,mbm,mbv:INTEGER
+    sen:string
+
+BEGIN
+    repeat 
+    write("donner une phrase")
+    read(sen)
+    until(sen[sen.length-1]=".")
+    FOR i FROM 0 TO sen.length-1  DO
+        {IF sen[i]!=" " and sen[i]!="."
+                then mbc=mbc+1
+                if min(sen[i])in ["a","e","i","u","o"]
+                then mbv=mbv+1
+                END IF 
+        ELSE mbm=mbm+1
+        end if }
+write(mbc)
+write (mbv)
+write(mbm)
+    END_FOR
+END
